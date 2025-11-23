@@ -62,7 +62,7 @@ class _TaskPageState extends State<TaskPage> {
         "description": description.text.trim(),
         "deadline": deadline.text.trim(),
         "created by": "${createdBy}_$uid",
-        "created at": DateTime.timestamp()
+        "created at": DateTime.now()
       });
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(

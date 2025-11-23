@@ -14,7 +14,6 @@ class SignInApp extends StatefulWidget {
 
 class _SignInAppState extends State<SignInApp> {
 
-  //Form State
   final _signInFormKey = GlobalKey<FormState>();
 
   TextEditingController username = TextEditingController();
@@ -23,15 +22,12 @@ class _SignInAppState extends State<SignInApp> {
   bool textVisible = true;
   String role = "";
 
-
-
   //Firebase Sign in authentication
   Future<void> login() async{
     String email = username.text.trim();
     String pass = password.text.trim();
     await FirebaseAuth.instance.signInWithEmailAndPassword(email:email,password:pass);
   }
-
 
   //get user role from firestore
   Future<void> getUserRole() async {

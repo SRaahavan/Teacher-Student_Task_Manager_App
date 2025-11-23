@@ -2,11 +2,6 @@ import "package:flutter/material.dart";
 import "package:project_myapp/account_teacher.dart";
 import "package:project_myapp/account_stud.dart";
 
-
-// void main(){
-//   runApp(TeacherRoleApp());
-// }
-
 class TeacherRoleApp extends StatefulWidget {
   const TeacherRoleApp({super.key});
 
